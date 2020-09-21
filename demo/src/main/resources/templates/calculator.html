@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/calculator-result" method="get">
+		<input name="first" type="number" placeholder="Prima valoare">
+		<input name="second" type="number" placeholder="A doua valoare">
+		<input type="submit" value="Calculeaza">
+	</form>
+	
+	<p th:text=${result}></p>
+</body>
+</html>
