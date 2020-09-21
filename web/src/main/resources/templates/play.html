@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div class="container w-50">
+		<p>Hai sa jucam un joc!</p>
+		<p class="text-danger" th:text="${err}"></p>
+
+		<div th:if="${isAuthenticated == true}">
+			<p>
+				Scor: <span th:text="${score}"></span>
+			</p>
+			<p>
+				<span th:text="${nr1}"></span> + <span th:text="${nr2}"></span>
+			</p>
+			<form action="play-form" method="get">
+				<div class="form-group">
+					<label>Raspunsul tau: </label> 
+					<input type="number" name="result" class="form-control">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</body>
+</html>
