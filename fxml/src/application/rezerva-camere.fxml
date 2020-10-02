@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/12.0.1">
+  <tabs>
+    <Tab text="Camere">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="103.0" layoutY="58.0" text="Camera Standard" />
+                  <Label layoutX="260.0" layoutY="58.0" text="Camera Deluxe" />
+                  <Label layoutX="406.0" layoutY="58.0" text="Camera Penthouse" />
+                  <Button fx:id="b1" layoutX="123.0" layoutY="112.0" mnemonicParsing="false" text="Rezerva" />
+                  <Button fx:id="b2" layoutX="427.0" layoutY="112.0" mnemonicParsing="false" text="Rezerva" />
+                  <Button fx:id="b3" layoutX="271.0" layoutY="112.0" mnemonicParsing="false" text="Rezerva" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Rezervari">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="131.0" layoutY="128.0" text="Ai rezervat: " />
+                  <Label fx:id="nr" layoutX="194.0" layoutY="128.0" text="0" />
+                  <Label layoutX="213.0" layoutY="128.0" text="camere" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
